@@ -1,0 +1,54 @@
+/* dashboard.component.css */
+.dashboard-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.dashboard-section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 16px;
+}
+
+.btn-view-logs {
+  width: 100%;
+}
+.activity-log-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.activity-log-icon {
+  font-size: 1.5em;
+  margin-right: 10px;
+  color: #02203f; /* Change color as needed */
+}
+
+.activity-log-text {
+  font-size: 1.2em;
+  color: #333; /* Change color as needed */
+  font-weight: bold;
+  text-transform: uppercase;
+}

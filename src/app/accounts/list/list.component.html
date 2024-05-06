@@ -1,0 +1,50 @@
+<div class="row">
+    <h2 class="activity-log-title">
+        <span class="activity-log-icon">
+            <i class="bi bi-view-list"></i>
+        </span>
+        <span class="activity-log-text">All Accounts Details</span>
+        <span class="activity-log-icon">
+            <i class="bi bi-view-list"></i>
+        </span>
+      </h2> 
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Account Holder</th>
+                <th>Account Number</th>
+                <th>Account Type</th>
+                <th>Current Balance</th>
+                <th>Address</th>
+                <th>Phone Number</th>
+                <th>IFSC Code</th>
+                <th>Branch</th>
+                <th>View</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let a of accounts$ | async; let i = index">
+            <tr>
+                <td>{{ i + 1 }}</td>
+                <td>{{a.name | uppercase}}</td>
+                <td>{{a.acc_number}}</td>
+                <td>{{a.acc_type | uppercase}}</td>
+                <td>{{a.balance | currency : 'INR'}}</td>
+                <td>{{a.address | uppercase}}</td>
+                <td>{{a.phone}}</td>
+                <td>{{a.ifsc | uppercase}}</td>
+                <td>{{a.branch | uppercase}}</td>
+                <td><a class="btn btn-info" [routerLink]="['/accounts',a.id,'view']">View</a></td>
+                <td><a class="btn btn-warning" [routerLink]="['/accounts',a.id,'update']">Update</a></td>
+                <td><button class="btn btn-danger" (click)="deleteAccount(a.id)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div class="row justify-content-center">
+    <div class="col-md-2">
+        <a class="btn btn-primary" routerLink="/accounts/add">Add Account</a>
+    </div>
+</div> 

@@ -1,0 +1,32 @@
+<div class="row m-5 shadow-lg p-3 mb-5 bg-body-tertiary rounded" *ngIf="account$ | async as acc">
+    <div class="row">
+       <h2 class="activity-log-title">
+        <span class="activity-log-icon">
+            <i class="bi bi-person-badge"></i>
+        </span>
+        <span class="activity-log-text">{{ acc.name}}'s Details</span>
+      </h2> 
+    </div>
+    <div class="row"></div>
+    <div class="row">
+        <div class="col"><h3>Account Name : <span class="small">{{ acc.name }}</span></h3></div>
+        <div class="col"><h3>Account Number:  <span class="small">{{ acc.acc_number }}</span></h3></div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col"><h3>Address : <span class="small">{{ acc.address }}</span></h3></div>
+        <div class="col"><h3>Account Type : <span class="small">{{ acc.acc_type }}</span></h3></div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col"><h3>Mobile Number : <span class="small">{{ acc.phone }}</span></h3></div>
+        <div class="col"><h3>Current Balance : <span class="small">{{ acc.balance }}</span></h3></div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col"><h3>IFSC Code : <span class="small">{{ acc.ifsc }}</span></h3></div>
+        <div class="col"><h3>Branch : <span class="small">{{ acc.branch }}</span></h3></div>
+    </div>
+    <div class="row justify-content-center m-5"><div class="col-md-2">
+    <button class="btn btn-primary" (click)="goBack()">Go Back</button></div></div>
+</div>

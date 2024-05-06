@@ -1,0 +1,54 @@
+{
+  "accounts": [
+    {
+      "name": "John Sinha",
+      "acc_number": 12304569870,
+      "acc_type": "Salary",
+      "balance": 50000,
+      "address": "Ambegaon BK, Pune",
+      "phone": 9512368407,
+      "ifsc": "SBIN0005943",
+      "branch": "Mumbai",
+      "id": "1"
+    },
+    {
+      "id": "a74e",
+      "name": "Michael Jakson",
+      "acc_number": 67567456879,
+      "acc_type": "Current",
+      "balance": "50000",
+      "address": "Kasaba Peth, Pune",
+      "phone": 5823694712,
+      "ifsc": "ICIC2548963",
+      "branch": "Kanpur"
+    },
+    {
+      "name": "Rutuja Taralkar",
+      "acc_number": 32569874584,
+      "acc_type": "Salary",
+      "balance": "400000",
+      "address": "Upper, Pune 411037",
+      "phone": 7856932534,
+      "ifsc": "KOTA0000259",
+      "branch": "Mumbai",
+      "id": "e6b8"
+    }
+  ],
+  "activityLogs": [
+    {
+      "id": "229f",
+      "action": "Account updated",
+      "timestamp": "2024-05-05T09:13:17.432Z"
+    },
+    {
+      "id": "781e",
+      "action": "Account updated",
+      "timestamp": "2024-05-05T10:48:20.771Z"
+    },
+    {
+      "id": "897f",
+      "action": "Account deleted",
+      "timestamp": "2024-05-05T12:03:17.816Z"
+    }
+  ]
+}

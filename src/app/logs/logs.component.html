@@ -1,0 +1,18 @@
+<div class="activity-log">
+  <h2 class="activity-log-title">
+    <span class="activity-log-icon">
+      <i class="bi bi-clock-history"></i>
+    </span>
+    <span class="activity-log-text">Activity Log</span>
+  </h2>  
+  <ul class="activity-log-list">
+    <li class="activity-log-item" *ngFor="let log of activityLogs">
+      <span class="log-action">{{ log.action }}</span> - <span class="log-timestamp">{{ log.timestamp }}</span>
+    </li>
+  </ul>
+</div>
+<div class="row justify-content-center m-5">
+  <div class="col-md-2">
+    <button class="btn btn-primary" (click)="goBack()">Go Back</button>
+  </div>
+</div>

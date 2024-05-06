@@ -1,0 +1,28 @@
+.small {
+    font-size: 80%;
+    font-style: normal;
+}
+h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.activity-log-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .activity-log-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #043a74; /* Change color as needed */
+  }
+  
+  .activity-log-text {
+    font-size: 1.2em;
+    color: #333; /* Change color as needed */
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  

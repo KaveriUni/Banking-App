@@ -1,0 +1,56 @@
+.activity-log {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .activity-log-title {
+    font-size: 24px;
+    color: #343a40;
+    margin-bottom: 10px;
+  }
+  
+  .activity-log-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .activity-log-item {
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .log-action {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .log-timestamp {
+    color: #6c757d;
+  }
+
+  .activity-log-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .activity-log-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+    color: #007bff; /* Change color as needed */
+  }
+  
+  .activity-log-text {
+    font-size: 1.2em;
+    color: #333; /* Change color as needed */
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  

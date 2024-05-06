@@ -1,0 +1,65 @@
+<h2 class="activity-log-title m-3">
+  <span class="activity-log-icon">
+    <i class="bi bi-speedometer"></i>
+  </span>
+  <span class="activity-log-text">Dashboard</span>
+</h2>  
+
+<div class="dashboard-section">
+  <h2 class="section-title">Account Overview</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card bg-primary text-white">
+        <div class="card-body">
+          <h5 class="card-title">Total Number of Accounts</h5>
+          <p class="card-text">{{ accounts.length }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card bg-success text-white">
+        <div class="card-body">
+          <h5 class="card-title">Total Balance across all Accounts</h5>
+          <p class="card-text">{{ totalBalance | currency : 'INR' }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dashboard-section">
+  <h2 class="section-title">Account Type Distribution</h2>
+  <div class="row">
+    <div class="col-md-6" *ngFor="let type of Object.keys(accountTypeDistribution)">
+      <div class="card bg-info text-white">
+        <div class="card-body">
+          <h5 class="card-title">{{ type }} Accounts</h5>
+          <p class="card-text">{{ accountTypeDistribution[type] }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dashboard-section">
+  <h2 class="section-title">Branch-wise Summary</h2>
+  <div class="row">
+    <div class="col-md-6" *ngFor="let branch of Object.keys(branchSummary)">
+      <div class="card bg-secondary text-white">
+        <div class="card-body">
+          <h5 class="card-title">{{ branch }} Branch</h5>
+          <p class="card-text">Total Accounts: {{ branchSummary[branch].totalAccounts }}</p>
+          <p class="card-text">Total Balance: {{ branchSummary[branch].totalBalance | currency : 'INR' }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="dashboard-section">
+  <div class="row justify-content-center">
+    <div class="col-md-2">
+      <button class="btn btn-primary btn-view-logs" (click)="viewActivityLogs()">View Activity Logs</button>
+    </div>
+  </div>
+</div>

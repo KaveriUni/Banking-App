@@ -1,0 +1,27 @@
+.activity-log-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .activity-log-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #043a74; /* Change color as needed */
+  }
+  
+  .activity-log-text {
+    font-size: 1.2em;
+    color: #333; /* Change color as needed */
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .ng-invalid:not(form){
+    border-left: 5px solid red;
+}
+
+.ng-valid:not(form){
+    border-left: 5px solid green;
+}
